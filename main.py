@@ -42,7 +42,7 @@ def get_manga():
         response.status_code = 200
         return response
     except Exception as ex:
-        print(ex)
+        print(ex, response.status_code)
     finally:
         cursor.close()
         conn.close()
